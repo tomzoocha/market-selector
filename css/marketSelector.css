@@ -1,0 +1,12 @@
+.hidden {
+  display: none;
+}
+
+.questions-row {
+  background-color: #DDEAF2;
+}
+
+select {
+  margin-bottom: 20px;
+  width: 100%;
+}

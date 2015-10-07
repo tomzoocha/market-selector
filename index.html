@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/marketSelector.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/market-selector.js"></script>
+</head>
+<body>
+  <div class="container market-selector">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Market Selector</h1>
+        <p>Use our interactive market selector tool to help identify which tourist markets to target your international marketing.</p>
+      </div>
+    </div>
+    <div class="row questions-row">
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h2>I am located in</h2>
+            <select class="js-location-type">
+              <option disabled="true">--select--<option>
+              <option value="js-postcode">Postcode</option>
+              <option value="js-area-code">Region</option>
+            </select>
+            <select class="js-location-input js-area-code hidden">
+              <option disabled="true">--select--<option>
+              <option value="9000">UK</option>
+              <option value="0">England</option>
+              <option value="100">London</option>
+              <option value="1010">England's North Country</option>
+              <option value="1020">Central England</option>
+              <option value="1030">Southern England</option>
+              <option value="1700">South West</option>
+              <option value="1550">East Midlands</option>
+              <option value="1500">West Midlands</option>
+              <option value="1600">East of England</option>
+              <option value="1400">Yorkshire</option>
+              <option value="1100">North East</option>
+              <option value="1300">North West</option>
+              <option value="5030">Isle of man</option>
+              <option value="5040">Channel Islands</option>
+              <option value="5010">Northern Ireland</option>
+              <option value="3100">Scotland</option>
+              <option value="4000">Wales</option>
+            </select>
+            <input class="js-location-input js-postcode hidden"></input>
+            <h2>My business is</h2>
+            <select class="js-business-type">
+              <option disabled="true">--select--<option>
+              <option value="js-accomodation">Accommodation</option>
+              <option value="js-attraction">Attraction</option>
+              <option>Retailer</option>
+              <option value="js-transport-provider">Tansport Provider</option>
+              <option value="js-food-drink-venue">Food &amp; Drink Venue</option>
+              <option>Tour operator/DMC</option>
+            </select>
+            <select class="js-business-input js-accomodation hidden">
+              <option disabled="true">--select--<option>
+              <option>Bed &amp; Breakfast</option>
+              <option>Camping/mobile home</option>
+              <option>Holiday Village/Centre</option>
+              <option>Hostel/University/School</option>
+              <option>Hotel/Guest House</option>
+              <option>Self-catering</option>
+              <option>Other</option>
+            </select>
+            <select class="js-business-input js-attraction hidden">
+              <option disabled="true">--select--<option>
+              <option>Landmark/icon</option>
+              <option>National park/garden</option>
+              <option>Castle</option>
+              <option>Religious</option>
+              <option>Stately Home/hostoric house</option>
+              <option>Museum</option>
+              <option>Arts/antiques/specialist</option>
+              <option>Live music</option>
+              <option>Nature/wildlife</option>
+              <option>Theatre</option>
+              <option>Festival</option>
+              <option>Film/television/literature</option>
+              <option>Sport/health/fitness</option>
+              <option>Historical</option>
+            </select>
+            <select class="js-business-input js-transport-provider hidden">
+              <option disabled="true">--select--<option>
+              <option>Flight Operator</option>
+              <option>Train</option>
+              <option>Taxi</option>
+              <option>Bus</option>
+              <option>Coach/mini bus</option>
+              <option>Car/Vehicle Hire</option>
+              <option>Ferry/boat</option>
+            </select>
+            <select class="js-business-input js-food-drink-venue hidden">
+              <option disabled="true">--select--<option>
+              <option>Pub</option>
+              <option>Restaurant</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h2>My local area is good for</h2>
+            <select class="js-local-area-input" multiple="true" size="10">
+              <option>Shopping</option>
+              <option>Sightseeing famous buildings or monuments</option>
+              <option>Parks &amp; Gardens</option>
+              <option>Pubs</option>
+              <option>Castles</option>
+              <option>Religious Buildings</option>
+              <option>Historic Houses</option>
+              <option>Museums</option>
+              <option>Going on a guided tour</option>
+              <option>Visiting the countryside/vilages</option>
+              <option>Art Galleries</option>
+              <option>Listening to live Music</option>
+              <option>Visiting the coast or beach</option>
+              <option>Walking in the countyside</option>
+              <option>Walking along the coast</option>
+              <option>Zoos, aquariums, wildlife</option>
+              <option>Theatre</option>
+              <option>Festivals</option>
+              <option>Literature/TV/Music/Film locations</option>
+              <option>Playing Golf</option>
+              <option>Watching a football match</option>
+              <option>Cycling</option>
+              <option>Researching ancestry</option>
+              <option>Spa/beaty centres</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h2>I currently export my business in</h2>
+            <select class="js-existing-markets-input" multiple="true" size="10">
+              <option>Australia</option>
+              <option>Austria</option>
+              <option>Belgium</option>
+              <option>Brazil</option>
+              <option>Canada</option>
+              <option>China</option>
+              <option>Denmark</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Hong Kong</option>
+              <option>India</option>
+              <option>Italy</option>
+              <option>Japan</option>
+              <option>Netherlands</option>
+              <option>Norway</option>
+              <option>Poland</option>
+              <option>Russia</option>
+              <option>Saudi Arabia</option>
+              <option>Spain</option>
+              <option>Sweden</option>
+              <option>Switzerland</option>
+              <option>UAE</option>
+              <option>USA</option>
+            </select>
+          </div>
+          <div class="col-xs-12 js-china-block china-block hidden">
+            <h2>Are you a member of our GREAT China Welcome programme?</h2>
+            <fieldset>
+              <input class="js-china-input" name="china-input" id="china-yes" type="radio" value="yes"/>
+              <label for="china-yes">Yes</label>
+            </fieldset>
+            <fieldset>
+              <input class="js-china-input" name="china-input" id="china-no" type="radio" value="no"/>
+              <label for="china-no">No</label>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row results-row">
+      <div class="col-xs-12">
+        <div class="js-china-link hidden">
+          <h2>Click here to see our <a href="https://www.visitbritain.org/great-china-welcome">GREAT China Welcome information</a></h2>
+        </div>
+        <div class="js-loading-block hidden">
+          <h1>Loading...</h1>
+        </div>
+        <div class="js-error-block hidden">
+          <h2 class="js-error">
+        </div>
+        <div class="js-results-block results-block hidden">
+          <h1>Recommended markets:</h1>
+          <div class="table-responsive">
+            <table class="table results-block__table">
+              <tr>
+                <td><img class="js-image-0" alt="Market 1" src="http://placehold.it/100x100"/></td>
+                <td><h2 class="js-result-0"></h2></td>
+                <td><p class="js-spend-0"></p></td>
+                <td><a class="js-link-0" href="">View Market</a></td>
+              </tr>
+              <tr>
+                <td><img class="js-image-1" alt="Market 2" src="http://placehold.it/100x100"/></td>
+                <td><h2 class="js-result-1"></h2></td>
+                <td><p class="js-spend-1"></p></td>
+                <td><a class="js-link-1" href="">View Market</a></td>
+              </tr>
+              <tr>
+                <td><img class="js-image-2" alt="Market 3" src="http://placehold.it/100x100"/></td>
+                <td><h2 class="js-result-2"></h2></td>
+                <td><p class="js-spend-2"></p></td>
+                <td><a class="js-link-2" href="">View Market</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div>
+    </div>
+  </div>
+</body>
+</html>
